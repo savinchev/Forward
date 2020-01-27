@@ -1,0 +1,17 @@
+.title {
+    padding: 7.8rem 0 6.5rem;
+
+    text-align: center;
+
+    h2 {
+        display: inline-block;
+
+        color: $title-color;
+        font-size: 4rem;
+        line-height: 5.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    
+        border-bottom: 2px solid $red;
+    }
+}

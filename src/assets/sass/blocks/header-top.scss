@@ -1,0 +1,23 @@
+.header {
+    height: 100vh;
+}
+
+.header-top {
+    background-color: $black;
+
+    color: rgba($white, .8);
+}
+
+.header-top__inner {
+    height: 11rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__phone {
+    padding-left: 3rem;
+
+    color: $white;
+}

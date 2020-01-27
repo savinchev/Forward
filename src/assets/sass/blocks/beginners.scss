@@ -1,0 +1,75 @@
+.beginners__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.beginners__item {
+    padding-bottom: 3.6rem;
+    margin-bottom: 7.1rem;
+    max-width: 37rem;
+    width: 100%;
+
+    background-color: $white;
+
+    box-shadow: $shadow;
+}
+
+.beginners__item-icon {
+    margin: 4.6rem 0;
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+.begginers__item-title {
+    padding: 0 5rem;
+
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: $title-color;
+    font-weight: 700;
+    
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 4.2rem;
+        height: 2px;
+
+        background-color: $red;
+
+        position: absolute;
+        left: 5rem;
+        bottom: -1rem;
+    }
+}
+
+.beginners__item-text {
+    padding: 0 5rem;
+    margin: 3.6rem 0 4rem;
+
+
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: $text-color;
+}
+
+.beginners__item-link {
+    margin: 0 auto;
+
+    color: $text-color;
+
+    background-color: transparent;
+    border: 1px solid $red;
+
+    transition: all .3s linear;
+
+    &:hover {
+        color: $white;
+
+        background-color: $red;
+        border-color: transparent;
+    }
+}

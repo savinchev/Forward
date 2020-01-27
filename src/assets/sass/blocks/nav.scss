@@ -1,0 +1,38 @@
+.menu__list {
+    display: block;
+
+    li {
+        display: inline-block;
+
+        & + li {
+            margin-left: 2rem;
+        }
+    }
+
+    a {
+        padding: .7rem 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 2px;
+
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+
+            background-color: $red;
+
+            transition: all .3s linear;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+
+                left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    padding: 4.3rem 0 7.2rem;
+
+    background: #e5e5e5;
+}
+
+.footer__text {
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #999;
+
+    & + & {
+        margin-top: 2rem;
+    }
+}
