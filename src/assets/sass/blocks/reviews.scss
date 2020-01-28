@@ -83,4 +83,15 @@
     }
 }
 
+.reviews__btn {
+    background: transparent;
+    border: 1px solid $white;
+
+    transition: all .3s linear;
+
+    &:hover {
+        background: $red;
+        border-color: $red;
+    }
+}
 
