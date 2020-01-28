@@ -1,1 +1,6 @@
-//= components/slick.js
+
+$(function() {
+
+    //= components/slick.js
+
+});

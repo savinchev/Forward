@@ -1,0 +1,86 @@
+.reviews {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-bottom: 8rem;
+}
+
+.reviews__slider {
+    margin-bottom: 5rem;
+}
+
+.reviews__title {
+
+    h2 {
+        color:$white;
+    }
+}
+
+.reviews__item {
+    display: flex;
+    width: 100%;
+}
+
+.reviews__item-photo,
+.reviews__item-content {
+    width: 50%;
+}
+
+.reviews__item-photo {
+
+    img {
+        width: 100%;
+    }
+}
+
+.reviews__item-content {
+    padding: 11.4rem 8.4rem 8.4rem;
+
+    text-align: center;
+
+    background-color: $white;
+}
+
+.reviews__item-title {
+    margin-bottom: 1.2rem;
+
+    font-size: 2.4rem;
+    line-height: 1;
+    font-weight: 700;
+    color: $title-color;
+}
+
+.reviews__item-subtitle {
+    margin-bottom: 3.3rem;
+
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $text-color;
+}
+
+.reviews__item-text {
+    padding-top: 5rem;
+    position: relative;
+
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $text-color;
+
+    &::before {
+        content: "";
+        width: 2.4rem;
+        height: 2.4rem;
+
+        background-image: url("../img/icons/quote-right.svg");
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+
+        transform: translateX(-50%);
+    }
+}
+
+

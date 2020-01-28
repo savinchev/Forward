@@ -497,6 +497,78 @@ select {
     text-decoration: underline;
 }
 
+.reviews {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+
+.reviews__slider {
+    margin-bottom: 5rem;
+}
+
+.reviews__title h2 {
+    color: #fff;
+}
+
+.reviews__item {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+}
+
+.reviews__item-photo,
+.reviews__item-content {
+    width: 50%;
+}
+
+.reviews__item-photo img {
+    width: 100%;
+}
+
+.reviews__item-content {
+    padding: 11.4rem 8.4rem 8.4rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.reviews__item-title {
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #222;
+}
+
+.reviews__item-subtitle {
+    margin-bottom: 3.3rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #777;
+}
+
+.reviews__item-text {
+    padding-top: 5rem;
+    position: relative;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #777;
+}
+
+.reviews__item-text::before {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url("../img/icons/quote-right.svg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
 .footer {
     padding: 4.3rem 0 7.2rem;
     background: #e5e5e5;
@@ -611,4 +683,105 @@ select {
 
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+/* Rewiews-Slider */
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+    width: 5.6rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background-color: transparent;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.slick-arrow.slick-prev img,
+  .slick-arrow.slick-next img {
+    margin: 0 auto;
+}
+
+.slick-arrow.slick-prev:hover,
+  .slick-arrow.slick-next:hover {
+    border: 1px solid transparent;
+    background-color: #777;
+}
+
+.slick-arrow.slick-prev {
+    left: -5rem;
+}
+
+.slick-arrow.slick-next {
+    right: -5rem;
+    -webkit-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+}
+
+.slick-arrow.slick-next img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -6.6rem;
+    right: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li button {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+    position: relative;
+    font-size: 0;
+    background: 0;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots li button::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .5;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slick-dots li button::after {
+    content: "";
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url("../img/icons/select-slide.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: -2px;
+    opacity: 0;
+}
+
+.slick-dots li.slick-active button::before,
+    .slick-dots li.slick-active button::after {
+    opacity: 1;
 }
