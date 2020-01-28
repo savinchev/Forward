@@ -1,14 +1,10 @@
 .header {
-    height: 100vh;
-}
-
-.header-top {
     background-color: $black;
 
     color: rgba($white, .8);
 }
 
-.header-top__inner {
+.header__inner {
     height: 11rem;
     width: 100%;
     display: flex;

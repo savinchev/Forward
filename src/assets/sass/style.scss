@@ -100,12 +100,13 @@ select
 }
 
 /* Blocks */
-@import "blocks/header-top";
+@import "blocks/header";
 @import "blocks/nav";
 @import "blocks/header-bottom";
 @import "blocks/btn";
 @import "blocks/title";
 @import "blocks/beginners";
+@import "blocks/business-offers";
 
 @import "blocks/footer";
 
