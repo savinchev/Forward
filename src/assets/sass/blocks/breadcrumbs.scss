@@ -30,4 +30,16 @@
             color: $title-color;
         }
     }
+
+    &.breadcrumbs--white li {
+
+        a {
+            color: $text-color;
+            
+        }
+
+        span {
+            color: $white;
+        }
+    }
 }
