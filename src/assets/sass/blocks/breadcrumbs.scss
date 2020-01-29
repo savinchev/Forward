@@ -1,0 +1,33 @@
+.breadcrumbs {
+    margin-top: 2rem;
+
+    li {
+        display: inline-block;
+        margin-right: 2rem;
+
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+
+        a {
+            position: relative;
+
+            color: $text-color;
+
+            &::after {
+                content: "";
+                width: 1rem;
+                height: 1px;
+
+                position: absolute;
+                top: 50%;
+                right: -1.6rem;
+
+                background-color: $text-color;
+            }
+        }
+    
+        span {
+            color: $title-color;
+        }
+    }
+}

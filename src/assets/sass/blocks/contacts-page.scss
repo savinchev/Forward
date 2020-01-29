@@ -1,0 +1,32 @@
+.contacts-page {
+
+}
+
+.contacts-page__title {
+    padding-top: 3rem;
+}
+
+.contacts-page__request {
+    margin: 0 0 9rem auto;
+    padding: 3.5rem 10rem;
+    max-width: 77rem;
+    min-height: auto;
+
+    color: $white;
+
+    transform: translateY(0);
+}
+
+.contacts-page__request-title {
+    margin-bottom: 1.8rem;
+
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.contacts-page__request .contacts-card {
+    bottom: 0;
+    left: -3.6rem;
+
+    transform: translateX(-100%);
+}

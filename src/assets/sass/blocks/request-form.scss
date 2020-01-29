@@ -1,0 +1,75 @@
+.request-form {
+    max-width: 570px;
+    width: 100%;
+}
+
+.request-form__items {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.request-form__item {
+    max-width: 27rem;
+    width: 100%;
+
+    label {
+        display: inline-block;
+        margin-bottom: .5rem;
+
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    input {
+        padding: 1.2rem 1rem;
+        display: block;
+        width: 100%;
+
+        font-size: 2rem;
+        line-height: 2.4rem;
+        border: 0;
+    }
+}
+
+/* Start custom checkbox */
+.request__card-info {
+    padding-left: 3.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.request__card-checkbox {
+    position: absolute;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:checked + .request__card-checkbox--fake {
+        
+        background-image: url("../img/icons/checkbox-on.svg");
+    }
+}
+
+.request__card-checkbox--fake {
+    margin-left: -3.5rem;
+    width: 2rem;
+    height: 2rem;
+
+    background-image: url("../img/icons/checkbox-off.svg");
+
+    position: absolute;
+}
+/* End custom checkbox */
+
+.request__card-btn {
+    margin-top: 5.5rem;
+    height: 4.8rem;
+
+    line-height: 4.8rem;
+
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
