@@ -1,0 +1,127 @@
+/* Education-header-bottom */
+.education__header-bottom {
+    margin-bottom: 6.4rem;
+}
+
+.education__header-bottom-title {
+    padding: 4.7rem 0 5rem;
+
+    text-align: left;
+    
+    h2 {
+        color: $white;
+    }
+}
+
+.education__header-bottom-subtitle {
+    margin-bottom: 3rem;
+    max-width: 50rem;
+    width: 100%;
+
+    h3 {
+        font-size: 4rem;
+        line-height: 5.6rem;
+        font-weight: 400;
+        color: $white;
+    }
+}
+
+.education__header-bottom-text {
+    margin-bottom: 3rem;
+    max-width: 68.2rem;
+
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $white;
+}
+
+.education__header-bottom-btn {
+    margin-top: 8.5rem;
+}
+
+
+/* Education-about */
+.education-about {
+    margin-bottom: 7rem;
+}
+
+.education-about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-about__video {
+    max-width: 78rem;
+    width: 100%;
+    min-height: 58rem;
+}
+
+.education-about__info {
+    padding: 5.4rem 4rem;
+    max-width: 37rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $white;
+}
+
+.education-about__info-item {
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 1.6rem;
+        height: 2px;
+
+        position: absolute;
+        top: -1rem;
+        left: 0;
+
+        background-color: $red;
+    }
+}
+
+.education-about__info-item + .education-about__info-item{
+    margin-top: 5rem;
+}
+
+
+/* Education-skills */
+.education-skills__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Education-start */
+.education-start {
+    margin-bottom: -60rem;
+    padding: 7.6rem 0 35rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.education-start__title.education-title {
+    display: inline-block;
+    margin-right: 3.2rem;
+
+    color: $white;
+}
+
+.education-start__title-link {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $white;
+    text-decoration: underline;
+}
+
+.education-start__inner {
+    display: flex;
+    justify-content: space-between;
+}

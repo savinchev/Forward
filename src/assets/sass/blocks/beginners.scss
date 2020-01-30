@@ -9,10 +9,26 @@
     margin-bottom: 7.1rem;
     max-width: 37rem;
     width: 100%;
+    position: relative;
 
     background-color: $white;
 
     box-shadow: $shadow;
+
+    &::before {
+        content: "";
+        width: 1.2rem;
+        height: 1.2rem;
+
+        position: absolute;
+        top: -1.2rem;
+        left: -1.2rem;
+
+        border: 1.2rem solid transparent;
+        border-bottom: 1.2rem solid $red;
+
+        transform: rotate(-45deg);
+    }
 }
 
 .beginners__item-icon {
