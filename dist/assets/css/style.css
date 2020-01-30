@@ -805,7 +805,7 @@ input::-webkit-inner-spin-button {
       .breadcrumbs li a::after {
         content: "";
         width: 1rem;
-        height: 1px;
+        height: 2px;
         position: absolute;
         top: 50%;
         right: -1.6rem;
@@ -1240,6 +1240,109 @@ input::-webkit-inner-spin-button {
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #777; }
+
+/* About__header-bottom */
+.about__header-bottom {
+  margin-bottom: 9.3rem; }
+
+.about__header-bottom-title {
+  padding: 4.7rem 0 12.5rem;
+  text-align: left; }
+  .about__header-bottom-title h2 {
+    color: #fff; }
+
+.about__header-bottom-text {
+  margin-bottom: 3rem;
+  max-width: 48.4rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #fff; }
+
+.about__header-bottom-btn {
+  margin-top: 8.5rem; }
+
+/* About__info */
+.about__info {
+  margin-bottom: 9.3rem; }
+
+.about__info-item {
+  padding-top: 21.1em;
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.about__info-item:nth-child(even) {
+  padding: 0 0 21.1em;
+  background-position: right center !important; }
+  .about__info-item:nth-child(even) .about__info-content {
+    margin-left: 0; }
+
+.about__info-content {
+  padding: 10rem 10rem 11.6rem;
+  margin-left: auto;
+  max-width: 114.6rem;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05); }
+
+.about__info-title {
+  padding: 0 0 5.8rem;
+  text-align: left; }
+  .about__info-title h3 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    font-weight: 400;
+    text-transform: none; }
+
+.about__info-text {
+  max-width: 42rem;
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #777; }
+
+/* About-advantages */
+.about-advantages {
+  margin-bottom: -60rem;
+  padding: 10.5rem 0 35rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.about-advantages__inner {
+  max-width: 52.2rem;
+  width: 100%; }
+
+.about-advantages-title {
+  margin-bottom: 8.3rem;
+  padding: 0 0 3rem;
+  text-align: left; }
+  .about-advantages-title h3 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none; }
+
+.about-advantages__item {
+  margin-bottom: 3.5rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
+.about-advantages__item-number {
+  width: 2.6em;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #e31e25; }
+
+.about-advantages__item-text {
+  max-width: 42rem;
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #fff; }
 
 /* Vendor Libs */
 /* Slider */
