@@ -124,9 +124,11 @@ title: Forward
 <section class="business-offers">
 
     <div class="business-offer  handelaar" style="background-image: url(assets/img/handelaar-bg.jpg);">
-        <div class="business-offer__content  handelaar">
 
-            <div class="container">
+
+        <div class="container">
+
+            <div class="business-offer__content  handelaar">
 
                 <div class="business-offer__title title">
                     <h2>Трейдерам</h2>
@@ -176,16 +178,18 @@ title: Forward
                 <a href="#" class="business-offer__btn  btn">Стать трейдером</a>
                 <a href="#" class="business-offer__link">Узнать больше</a>
 
-            </div><!-- ./container -->
+            </div><!-- /.handelaar__content -->
 
-        </div><!-- /.handelaar__content -->
+        </div><!-- ./container -->
+
     </div><!-- /.handelaar -->
 
     <div class="business-offer  
     investor" style="background-image: url(assets/img/investor-bg.jpg);">
-        <div class="business-offer__content">
 
-            <div class="container">
+        <div class="container">
+
+            <div class="business-offer__content">
 
                 <div class="business-offer__title title">
                     <h2>Инвесторам</h2>
@@ -234,9 +238,10 @@ title: Forward
                 <a href="#" class="business-offer__btn  btn">Стать инвестором</a>
                 <a href="#" class="business-offer__link">Узнать больше</a>
 
-            </div><!-- ./container -->
+            </div><!-- /.handelaar__content -->
 
-        </div><!-- /.handelaar__content -->
+        </div><!-- ./container -->
+
     </div><!-- /.handelaar -->
 
 </section><!-- /.business-offers -->
@@ -520,3 +525,109 @@ title: Forward
 </section><!-- ./events -->
 
 
+<!-- Modal-thank's -->
+<div class="modal" style="display: none;">
+    
+    <div class="modal__content" style="background-image: url(assets/img/header-bg.jpg);">
+
+        <h6 class="modal__title">
+            Ваша заявка успешно отправлена!
+        </h6>
+
+        <p class="modal__text">
+            В ближайшее время с Вами свяжется наш менеджер
+        </p>
+
+        <a href="index.html" class="modal__btn  btn">На главную</a>
+
+    </div><!-- /.modal__content -->
+
+</div><!-- /.modal -->
+
+
+<!-- Modal-request -->
+<div class="modal-request  modal" style="display: none;">
+
+    <div class="modal__content" style="background-image: url(assets/img/header-bg.jpg);">
+
+        <h6 class="modal__title">
+            Оставить заявку
+        </h6>
+
+        <div class="request-form">
+            <form action="/">
+
+                <div class="request-form__items">
+
+                    <div class="request-form__item">
+                        <label>Ваше Имя</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="request-form__item">
+                        <label>Ваш Телефон</label>
+                        <input type="number">
+                    </div>
+
+                </div><!-- /.request-form__items -->
+
+                <label class="request__card-info" for="request-checkbox">
+                    <input class="request__card-checkbox" type="checkbox" id="request-checkbox" checked>
+                    <span class="request__card-checkbox--fake"></span>
+                    Заполняя форму Вы даете согласие на обработку персональных данных и соглашаетесь с условиями
+                    политики конфиденциальности.
+                </label>
+
+                <button class="request__card-btn  btn" type="submit">Отправить</button>
+
+            </form>
+        </div><!-- /.request-form -->
+
+    </div><!-- /.modal__content -->
+</div><!-- /.modal-request -->
+
+
+<!-- Modal-programs -->
+<div class="modal-programs  modal" style="display: none;">
+        <div class="modal__content">
+
+            <img src="assets/img/modal-image.jpg" alt="programs-image" class="modal__image">
+
+            <div class="modal__info">
+
+                <span class="modal__info-category">Базовый</span>
+
+                <div class="modal__title  title">
+                    <h3>Стандарт</h3>
+                </div>
+
+                <p class="modal__subtitle">
+                    На этом этапе вы познакомитесь с основами финансового рынка
+                </p>
+
+                <p class="modal__info-item">
+                    Фундаментальный анализ (политика, экономика чрезвычайные ситуации, слухи, форс мажоры и ожидание), который оказывает особое влияние на изменение курсов валют и остальных инструментов.
+                </p>
+
+                <p class="modal__info-item">
+                    Технический анализ (фигуры, тренды, уровни Фибоначчи), который поможет вам найти выгодные точки для входа и выхода с позиций.
+                </p>
+
+                <p class="modal__info-item">
+                    Компьютерный анализ ознакомит вас с основными и высокодоходными видами индикаторов, такими как: трендовые и оссцилляторы.
+                </p>
+
+                <p class="modal__info-item">
+                    Свечной анализ (основные фигуры и их применение, классические модели свечного анализа).
+                </p>
+
+                <a href="#" class="modal__btn  btn">Участвовать</a>
+            </div>
+
+            <span class="modal-close">
+                <span></span>
+                <span></span>
+            </span>
+
+    </div><!-- /.modal__content -->
+</div><!-- /.modal-programs -->

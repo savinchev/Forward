@@ -15,14 +15,43 @@
 }
 
 .business-offer__content {
-    max-width: 114.6rem;
+    max-width: 77.1rem;
     padding: 0 10rem 7.5rem 10rem;
+    position: relative;
 
     background-color: $white;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 200%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        right: 100%;
+        
+        background-color: $white;
+    }
+
+    &::before {
+        display: none;
+    }
 }
 
 .business-offer__content.handelaar {
     margin-left: auto;
+
+    &::before {
+        display: block;
+
+        left: 100%;
+        right: auto;
+    }
+
+    &::after {
+        display: none;
+    }
 }
 
 .business-offer__title {

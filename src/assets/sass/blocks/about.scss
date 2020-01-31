@@ -39,23 +39,52 @@
     background-repeat: no-repeat;
 }
 
+.about__info-content {
+    padding: 10rem 10rem 11.6rem;
+    margin-left: auto;
+    max-width: 77.1rem;
+    min-height: 50.2rem;
+    width: 100%;
+    position: relative;
+
+    background-color: $white;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 200%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+        
+        background-color: $white;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
 .about__info-item:nth-child(even) {
     padding: 0 0 21.1em;
     background-position: right center!important;
 
     & .about__info-content {
         margin-left: 0;
+
+        &::before {
+            display: block;
+
+            right: 100%;
+            left: auto;
+        }
+
+        &::after {
+            display: none;
+        }
     }
-}
-
-.about__info-content {
-    padding: 10rem 10rem 11.6rem;
-    margin-left: auto;
-    max-width: 114.6rem;
-    width: 100%;
-
-    background-color: $white;
-    box-shadow: $shadow;
 }
 
 .about__info-title {
