@@ -11,6 +11,14 @@
     color: $white;
 
     transform: translateY(0);
+
+    @media(max-width: 1220px) {
+        margin: 0 auto;
+    }
+
+    @media(max-width: 785px) {
+        padding: 3.5rem;
+    }
 }
 
 .contacts-page__request-title {
@@ -25,4 +33,11 @@
     left: -3.6rem;
 
     transform: translateX(-100%);
+
+    @media(max-width: 1220px) {
+        bottom: -1rem;
+        left: 50%;
+
+        transform: translate(-50%, 100%);
+    }
 }

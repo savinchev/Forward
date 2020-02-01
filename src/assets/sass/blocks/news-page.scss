@@ -13,6 +13,11 @@
         line-height: 2.4rem;
         color: $blue;
         text-decoration: underline;
+
+        @media(max-width: 450px) {
+            display: block;
+            margin: 0.5rem 0 0;
+        }
     }
 }
 
@@ -24,13 +29,20 @@
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between;
+
+    @media(max-width: 1215px) {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
 }
 
 .news__headline-item {
     max-width: 37rem;
     width: 100%;
     height: 33.5rem;
-
+    margin: .75rem;
     padding: 2.5rem 4.2rem;
     display: flex;
     flex-direction: column;
@@ -48,6 +60,24 @@
         max-width: 77rem;
         height: 70rem;
     }
+
+    @media(max-width: 1215px) {
+        height: 20rem;
+        padding-top: 4rem;
+
+        &.main-new {
+            padding-top: 3rem;
+            height: auto;
+        }
+    }
+
+    @media(max-width: 819px) {
+        max-width: 100%;
+    }
+
+    @media(max-width: 575px) {
+        padding: 2.5rem;
+    }
 }
 
 .news__headline-title {
@@ -60,6 +90,17 @@
         line-height: 4.2rem;
         margin-bottom: 1rem;
     }
+
+    @media(max-width: 575px) {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+
+        .main-new & {
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .news__headline-date {
@@ -70,11 +111,15 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media(max-width: 1202px) {
+        justify-content: space-around;
+    }
 }
 
 .news__item {
     padding: 4rem;
-    margin-bottom: 3rem;
+    margin: 0 .75rem 7.1rem;
     max-width: 37rem;
     width: 100%;
 
@@ -84,6 +129,10 @@
     background-color: $white;
 
     box-shadow: $shadow;
+
+    @media(max-width: 819px) {
+        margin-bottom: 3rem;
+    }
 }
 
 .news__item-title {
@@ -109,6 +158,10 @@
     margin-bottom: 16.5rem;
 
     img {
-        margin: 0 auto;
+        width: 100%;
+    }
+
+    @media(max-width: 450px) {
+        margin-bottom: 0;
     }
 }

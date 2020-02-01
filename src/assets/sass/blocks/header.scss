@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+
     background-color: $black;
 
     color: rgba($white, .8);
@@ -16,4 +18,8 @@
     padding-left: 3rem;
 
     color: $white;
+
+    @media(max-width: 1000px) {
+        display: none;
+    }
 }

@@ -2,11 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media(max-width: 1202px) {
+        justify-content: space-around;
+    }
 }
 
 .beginners__item {
     padding-bottom: 3.6rem;
-    margin-bottom: 7.1rem;
+    margin: 0 .75rem 7.1rem;
     max-width: 37rem;
     width: 100%;
     position: relative;
@@ -28,6 +32,17 @@
         border-bottom: 1.2rem solid $red;
 
         transform: rotate(-45deg);
+    }
+
+    @media(max-width: 819px) {
+        margin-bottom: 3rem;
+    }
+}
+
+.beginners__item-image {
+
+    img {
+        width: 100%;
     }
 }
 
@@ -60,6 +75,14 @@
         left: 5rem;
         bottom: -1rem;
     }
+
+    @media(max-width: 450px) {
+        padding: 0 3rem;
+
+        &::before {
+            left: 3rem;
+        }
+    }
 }
 
 .beginners__item-text {
@@ -70,6 +93,10 @@
     font-size: 1.8rem;
     line-height: 2.4rem;
     color: $text-color;
+
+    @media(max-width: 450px) {
+        padding: 0 3rem;
+    }
 }
 
 .beginners__item-link {
@@ -87,5 +114,9 @@
 
         background-color: $red;
         border-color: transparent;
+    }
+
+    @media(max-width: 675px) {
+        width: 90%;
     }
 }

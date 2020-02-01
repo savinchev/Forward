@@ -1,5 +1,17 @@
 .request {
     margin-top: -15%;
+
+    @media(max-width: 1125px) {
+        margin-top: -30%;
+    }
+
+    @media(max-width: 785px) {
+        margin-top: -40%;
+    }
+
+    @media(max-width: 450px) {
+        margin-top: 2rem;
+    }
 }
 
 .request__card {
@@ -12,6 +24,16 @@
     background-position: center;
 
     transform: translateY(50%);
+
+    @media(max-width: 890px) {
+        padding: 3.5rem;
+    }
+
+    @media(max-width: 450px) {
+        margin-top: 2rem;
+
+        transform: none;
+    }
 }
 
 .request__content {
@@ -27,6 +49,13 @@
     font-size: 2.4rem;
     line-height: 3.2rem;
     font-weight: 700;
+
+    @media(max-width: 785px) {
+        margin-bottom: .5rem;
+
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
 }
 
 .request__content-info {
@@ -34,6 +63,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media(max-width: 785px) {
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
 }
 
 .request-info__title {
@@ -50,6 +84,11 @@
 .request-info__text {
     font-size: 1.6rem;
     line-height: 2rem;
+
+    @media(max-width: 785px) {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
 }
 
 .request__photo {
@@ -58,6 +97,10 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media(max-width: 1125px) {
+        display: none;
+    }
 }
 
 

@@ -1,12 +1,21 @@
 .request-form {
     max-width: 570px;
     width: 100%;
+
+    @media(max-width: 785px) {
+        max-width: 100%;
+    }
 }
 
 .request-form__items {
     margin-bottom: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media(max-width: 785px) {
+        margin-bottom: 0;
+    }
 }
 
 .request-form__item {
@@ -30,6 +39,11 @@
         line-height: 2.4rem;
         border: 0;
         outline: 0;
+    }
+
+    @media(max-width: 785px) {
+        max-width: 100%;
+        margin-bottom: 1rem;
     }
 }
 
@@ -73,4 +87,9 @@
     border: 0;
     outline: 0;
     cursor: pointer;
+
+    @media(max-width: 785px) {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
 }

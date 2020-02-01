@@ -9,19 +9,35 @@
 
     background: $white;
     box-shadow: $shadow;
+
+    @media(max-width: 450px) {
+        padding: 1.4rem;
+
+        bottom: 0;
+        transform: translateY(110%);
+    }
 }
 
 .contacts__logo {
     margin: 1rem auto 2.8rem;
+
+    @media(max-width: 450px) {
+        margin: .5rem auto 1rem;
+    }
 }
 
 .contacts__address,
 .contacts__opentime {
     text-align: center; 
 
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
     color: $title-color; 
+
+    @media(max-width: 450px) {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
 }
 
 .contacts__phone {
@@ -35,6 +51,14 @@
 
     border-top: 1px dashed #ccc;
     border-bottom: 1px dashed #ccc;
+
+    @media(max-width: 450px) {
+        margin: 0.8rem 0;
+        padding: 1rem 0;
+
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
 }
 
 

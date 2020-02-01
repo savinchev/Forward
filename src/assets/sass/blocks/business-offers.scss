@@ -4,6 +4,10 @@
     background-position: start center;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media(max-width: 785px) {
+        padding: 3rem 0 0;
+    }
 }
 
 .business-offer.investor {
@@ -12,11 +16,15 @@
 
     background-position: center;
     background-size: cover;
+
+    @media(max-width: 785px) {
+        padding: 3rem 0 0;
+    }
 }
 
 .business-offer__content {
     max-width: 77.1rem;
-    padding: 0 10rem 7.5rem 10rem;
+    padding: 0 10rem 7.5rem;
     position: relative;
 
     background-color: $white;
@@ -37,6 +45,15 @@
     &::before {
         display: none;
     }
+
+    @media(max-width: 785px) {
+
+        padding: 0 3em 3.5rem;
+
+        &::after {
+            display: none;
+        }
+    }
 }
 
 .business-offer__content.handelaar {
@@ -52,17 +69,42 @@
     &::after {
         display: none;
     }
+
+    @media(max-width: 785px) {
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .business-offer__title {
     padding-left: 10rem;
     text-align: left;
+
+    @media(max-width: 785px) {
+        padding-left: 5rem;
+    }
+
+    @media(max-width: 450px) {
+        padding-left: 0;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
 }
 
 .business-offer__item {
     padding-left: 10rem;
     margin-bottom: 6rem;
     max-width: 61.3rem;
+
+    @media(max-width: 785px) {
+        padding-left: 5rem;
+    }
+
+    @media(max-width: 450px) {
+        padding-left: 0;
+        padding-top: 5rem;
+    }
 }
 
 .business-offer__item-title {
@@ -74,6 +116,15 @@
         line-height: 4.2rem;
         font-weight: 400;
         color:$black;
+
+        @media(max-width: 785px) {
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    @media(max-width: 450px) {
+        text-align: center;
     }
 }
 
@@ -83,18 +134,43 @@
     top: 50%;
 
     transform: translate(-100%,-50%);
+
+    @media(max-width: 785px) {
+        left: -1.6rem;
+    }
+
+    @media(max-width: 450px) {
+        left: 50%;
+        top: -1rem;
+    
+        transform: translate(-50%,-100%);
+    }
 }
 
 .business-offer__item-text {
 
     font-size: 1.8rem;
     line-height: 2.4rem;
-    color: $text-color
+    color: $text-color;
+
+    @media(max-width: 785px) {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    @media(max-width: 450px) {
+        text-align: center;
+    }
 }
 
 .business-offer__btn {
     display: inline-block;
     margin: 0 3rem 0 10rem;
+
+    @media(max-width: 785px) {
+        display: block;
+        margin: 0 auto 1.5rem;
+    }
 }
 
 .business-offer__link {

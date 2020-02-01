@@ -10,4 +10,8 @@
     text-align: center;
 
     background: $red;
+
+    @media(max-width: 675px) {
+        width: 100%;
+    }
 }

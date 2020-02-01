@@ -1,5 +1,5 @@
 .programs__variant {
-    margin-bottom: 3rem;
+    margin: 0 .75rem 3rem;
     max-width: 57rem;
     width: 100%;
 
@@ -10,6 +10,11 @@
 
 .programs__variant-logo {
     position: relative;
+    height: auto;
+
+    img{
+        width: 100%;
+    }
 }
 
 .programs__variant-category {
@@ -34,6 +39,10 @@
 
 .programs__variant-content {
     padding: 4.5rem 3.4rem 5.9rem 7rem;
+
+    @media(max-width: 650px) {
+        padding: 3rem;
+    }
 }
 
 .programs__variant-title {
@@ -46,6 +55,13 @@
         line-height: 4.2rem;
         font-weight: 400;
         text-transform: capitalize;
+    }
+
+    @media(max-width: 450px) {
+        h3 {
+            font-size: 3rem;
+            line-height: 3.8rem;
+        }
     }
 }
 
@@ -69,4 +85,8 @@
 
 .programs__variant-btn {
     width: 33rem;
+
+    @media(max-width: 650px) {
+        width: 100%;
+    }
 }

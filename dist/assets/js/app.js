@@ -3016,7 +3016,38 @@ $(function() {
         dots: true,
         prevArrow: '<button class="slick-arrow slick-prev"><img src="assets/img/icons/arrow-left.svg" alt="slider-arrow"></button> ',
         nextArrow: '<button class="slick-arrow slick-next"><img src="assets/img/icons/arrow-left.svg" alt="slider-arrow"></button> ',
+        responsive: [
+            {
+                breakpoint: 675,
+                settings: {
+                    dots: false,
+                    arrows: false
+                }
+            }
     
+        ]
     });
 
+    $('.js-menu-btn').on('click', function() {
+        $(this).toggleClass('active');
+        $('.js-menu-list').toggleClass('active');
+    })
+
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+
+//     function init() {
+//         var menuBtn = document.querySelector('.js-menu-btn');
+//         var menuList = document.querySelector('.js-menu-list');
+    
+//         menuBtn.addEventListener('click', function() {
+//             console.log('1');
+    
+//             menuList.classlist.contains('active') ? menuList.classList.remove('active') : menuList.classList.add('active');
+//         });
+//     }
+
+//     init();
+
+// });
